@@ -1,6 +1,7 @@
 package art.aukhatov.string;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
@@ -61,6 +62,13 @@ public class StringBenchmark {
     @Benchmark
     public String stringJoin(Dictionary dictionary, Blackhole bh) {
         String message = String.join("Hello", dictionary.word, dictionary.word);
+        bh.consume(message);
+        return message;
+    }
+
+    @Benchmark
+    public String apacheCommonsStringJoin(Dictionary dictionary, Blackhole bh) {
+        String message = StringUtils.join("Hello", dictionary.word, dictionary.word);
         bh.consume(message);
         return message;
     }

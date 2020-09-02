@@ -10,6 +10,9 @@ In some cases there don't have any information what I need. And I do my own expe
 ### Results of the Benchmark
 ```
 Benchmark                               (randomWordLength)  Mode  Cnt    Score    Error  Units
+StringBenchmark.apacheCommonsStringJoin                 10  avgt   10   69.927 ± 15.804  ns/op
+StringBenchmark.apacheCommonsStringJoin                 20  avgt   10   60.087 ±  1.178  ns/op
+StringBenchmark.apacheCommonsStringJoin                 50  avgt   10  161.179 ± 11.760  ns/op
 StringBenchmark.primitiveConcatenation                  10  avgt   10   24.203 ±  0.211  ns/op
 StringBenchmark.primitiveConcatenation                  20  avgt   10   25.040 ±  0.364  ns/op
 StringBenchmark.primitiveConcatenation                  50  avgt   10   38.281 ±  0.895  ns/op
