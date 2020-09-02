@@ -27,6 +27,15 @@ StringBenchmark.stringJoin                              20  avgt   10  121.745 Â
 StringBenchmark.stringJoin                              50  avgt   10  182.598 Â±  1.253  ns/op
 ```
 
+### Environment
+
+```
+VM version: JDK 1.8.0_152, Java HotSpot(TM) 64-Bit Server VM, 25.152-b16
+OS: Linux Ubuntu 19.10
+CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz 8 cores
+RAM: 16Gb
+```
+
 ### Conclusion
 
 Dear Java Developers, please avoid using `String.format()` to concatenate a string.
