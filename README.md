@@ -22,6 +22,9 @@ StringBenchmark.stringConcat                            50  avgt   10   76.619 �
 StringBenchmark.stringFormat                            10  avgt   10  673.458 ± 26.151  ns/op
 StringBenchmark.stringFormat                            20  avgt   10  711.718 ± 50.907  ns/op
 StringBenchmark.stringFormat                            50  avgt   10  733.963 ± 29.483  ns/op
+StringBenchmark.stringJoin                              10  avgt   10   92.567 ±  1.582  ns/op
+StringBenchmark.stringJoin                              20  avgt   10  121.745 ±  5.397  ns/op
+StringBenchmark.stringJoin                              50  avgt   10  182.598 ±  1.253  ns/op
 ```
 
 ### Conclusion

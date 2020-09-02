@@ -58,6 +58,13 @@ public class StringBenchmark {
         return message;
     }
 
+    @Benchmark
+    public String stringJoin(Dictionary dictionary, Blackhole bh) {
+        String message = String.join("Hello", dictionary.word, dictionary.word);
+        bh.consume(message);
+        return message;
+    }
+
     @State(Scope.Thread)
     public static class Dictionary {
 
