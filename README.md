@@ -2,6 +2,11 @@
 
 ## String Concatenation Benchmark
 
+### Motivation
+Just one point, I have to prove my decision by reference articles or spec papers.
+Like according to Java Language Specification and so on, or accroding by Jh.Bloch and so on.
+In some cases there don't have any information what I need. And I do my own experiment like this.
+
 ### Results of the Benchmark
 ```
 Benchmark                               (randomWordLength)  Mode  Cnt    Score    Error  Units
