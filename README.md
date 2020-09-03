@@ -41,4 +41,4 @@ RAM: 16Gb
 
 ### Conclusion
 
-Dear Java Developers, please avoid using `String.format()` to concatenate a string.
+Dear Java Developers, please avoid using `String.format()` to concatenate a string when a performance is an important for you. 
